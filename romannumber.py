@@ -195,7 +195,7 @@ class RomanNumber():
         return self.__add__(value)
 
     def __sub__(self, value):
-        resultado = max(0, int(value) - self.value)
+        resultado = max(0, self.value - int(value))
         resultado = RomanNumber(resultado)
         return resultado
 
